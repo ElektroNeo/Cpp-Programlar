@@ -19,5 +19,5 @@ int main (){
 
 /*
 	:::01:::
-	1'den 1000000000'a kadar olan sayýlarýn toplamý.
+	Sum of numbers from 1 to 1000000000.
 */
