@@ -18,8 +18,8 @@ int main () {
 				break; 
 				}
 			}
-		// Döngüden çıkan y 0 ise x asal sayı olmaz, 0'dan farklı
-		// bir sayı ise x asal sayı olur.
+		// If y = 0, then x is not a prime number.
+		// Else x is prime number.
 		if (y != 0) {
 			cout << x << " is prime number." << endl;
 		}
