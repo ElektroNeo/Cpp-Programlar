@@ -17,9 +17,9 @@ int main (){
 
 /*
 	:::02:::
-	1'den 1000000000'a kadar olan sayýlarý matematiksel formülle toplamýný bulmak:
-	1'den n'e kadar olan sayýlarýn toplamýný bulmak için n*(n+1)/2 formülünü kullanýrýz.
-	Bu programda da bu kullanýldý. Bunu yapmamýzýn amacý programýn hýzlý çalýþmasý içindir.
-	01 programýda ayný iþlemi yapýyor fakat daha fazla sürede bunu yapabiliyor. Bu 
-	anlamda matematiksel formülleri kullanmak iþimizi hýzlandýrýyor.
+	Find the sum of numbers from 1 to 1000000000 with mathematical formulas:
+	We use the formula n * (n + 1) / 2 to find the sum of the numbers from 1 to n.
+	This was also used in this program. The purpose of this is to make the program run fast.
+	01 is doing the same in the program but can do it in more time. This
+	using mathematical formulas in the sense of our business is accelerating.
 */
