@@ -1,7 +1,7 @@
-# Cpp-Programlar
-Programlar belli bir sıraya göre sıralanmamıştır. Aşağıda programlarla ilgili açıklamalar verilmiştir.
+# C++ Programs
+Programs are not ranked in a specific order. Below is a description of the programs.
 
-* 01 -> 1'den 1000000000'a kadar olan sayıların toplamı 1.
-* 02 -> 1'den 1000000000'a kadar olan sayıların toplamı 2.
-* 03 -> Girilen herhangi bir sayının asal olup olmadığını kontrol eder.
-* 04 -> Girilen bir sayıya kadar olan asal sayıları bulur ve istenirse asal_sayi.txt dosyasına yazar.
+* 01 -> The sum of the numbers from 1 to 1000000000.
+* 02 -> Sum of numbers from 1 to 1000000000.
+* 03 -> Checks if any number entered is prime.
+* 04 -> Finds prime numbers up to an entered number and writes to prime_numbers.txt if desired.
