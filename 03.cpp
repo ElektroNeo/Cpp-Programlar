@@ -8,20 +8,20 @@ int main () {
 	unsigned long long x, i, y;
 	
 	while (1) {
-		cout << endl << "Bir sayi gir: " << endl;
+		cout << endl << "Enter a number: " << endl;
 		cin >> x;
 		
 		for (i=2; i<x; i++) {
 			y = x % i;
 			if (y == 0){
-				cout << x << " bir asal sayi degildir." << endl;
+				cout << x << " is not a prime number" << endl;
 				break; 
 				}
 			}
-		// Döngüden çýkan y 0 ise x asal sayý olmaz, 0'dan farklý
-		// bir sayý ise x asal sayý olur.
+		// DÃ¶ngÃ¼den Ã§Ä±kan y 0 ise x asal sayÄ± olmaz, 0'dan farklÄ±
+		// bir sayÄ± ise x asal sayÄ± olur.
 		if (y != 0) {
-			cout << x << " bir asal sayidir." << endl;
+			cout << x << " is prime number." << endl;
 		}
 	}
 	
@@ -32,5 +32,5 @@ int main () {
 
 /*
 	:::03:::
-	Girilen herhangi bir sayýnýn asal olup olmadýðýný kontrol eder.
+	Checks if any number entered is prime.
 */
