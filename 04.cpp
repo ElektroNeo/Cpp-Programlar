@@ -6,10 +6,10 @@ using namespace std;
 
 int main () {
 	
-	unsigned long long x, i, y, z, asal, a[200000], sayac=0, toplam=0;
+	unsigned long long x, i, y, z, prime, a[200000], counter=0, sum=0;
 	
 	while (1) {
-		cout << endl << "Kaca kadar olan asal sayilar: " << endl;
+		cout << endl << "Number of prime numbers: " << endl;
 		cin >> x;
 		
 		for (i=2; i<x; i++) {
@@ -19,33 +19,33 @@ int main () {
 					goto label;
 				}
 			}
-			a[sayac] = y;
-			cout << y << "\t" << sayac+1 << endl;
-			sayac++;
-label:;
+			a[counter] = y;
+			cout << y << "\t" << counter+1 << endl;
+			counter++;
+label:
 		}
 		
-		int secim;
+		int choise;
 		
-		cout << "Bulunan asal sayilar dosyaya yazilsin mi?\n "
-		<< "1 -> Evet, 2 -> Hayir : ";
-		cin >> secim;
+		cout << "Write prime numbers to file?\n "
+		<< "1 -> Yes, 2 -> No : ";
+		cin >> choise;
 		
-		if (secim == 1) {
+		if (choise == 1) {
 			ofstream myfile;
-			myfile.open ("asal_sayi.txt", ios::trunc);
-			for (int say = 0; say<sayac; say++) {
+			myfile.open ("prime_numbers.txt", ios::trunc);
+			for (int i = 0; i<counter; i++) {
 		
-				myfile << say+1 << ". " << a[say] << endl;
+				myfile << i+1 << ". " << a[i] << endl;
 				
 			}
 			myfile.close();
 		}
-		else if (secim == 2) {
+		else if (choise == 2) {
 			break;
 		}
 		else {
-			cout << "Yanlis bir secim yaptiniz. Tekrar deneyin!" << endl;
+			cout << "Wrong choise. Try again!" << endl;
 			goto label;
 		}
 	}
@@ -56,6 +56,7 @@ label:;
 
 /*
 	:::04:::
-	Girilen bir sayýya kadar olan asal sayýlarý buluyor ve istenirse 
-	bulunan asal sayýlarý asal_sayi.txt dosyasýna yazýyor.
+	Find the prime numbers up to an entered number and if desired
+	writes prime numbers found in prime_numbers.txt.
+
 */
