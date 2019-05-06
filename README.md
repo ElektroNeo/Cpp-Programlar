@@ -1,5 +1,6 @@
 # C++ Programs
 Programs are not ranked in a specific order. Below is a description of the programs.
+Note: All programs are tested on Windows OS.
 
 * 01 -> The sum of the numbers from 1 to 1000000000.
 * 02 -> Sum of numbers from 1 to 1000000000.
